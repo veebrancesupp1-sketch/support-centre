@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="CryptoDesk — Professional support for your crypto wallets and exchanges. Get help with MetaMask, Binance, Coinbase, Phantom, and more." />
+  <title>CryptoDesk · Web3 Support Center</title>
+
+  <!-- Google Fonts: Clash Display (display) + Instrument Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <span class="nav-logo-icon">
+          <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+            <path d="M11 2L3 7V15L11 20L19 15V7L11 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+            <path d="M11 2V20M3 7L19 15M19 7L3 15" stroke="currentColor" stroke-width="1.2" stroke-opacity="0.5"/>
+          </svg>
+        </span>
+        CryptoDesk
+      </a>
+      <div class="nav-links">
+        <a href="#wallets" class="nav-link">Wallets</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact-support" class="nav-link nav-link-cta">Get Support</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="nav-mobile-menu">
+      <a href="#wallets" class="nav-mobile-link">Wallets & Exchanges</a>
+      <a href="#faq" class="nav-mobile-link">FAQ</a>
+      <a href="#contact-support" class="nav-mobile-link">Get Support</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
+    <div class="hero-inner">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        Live Support Available
+      </div>
+      <h1 class="hero-title">
+        Your Web3 assets,<br />
+        <span class="hero-title-accent">always supported.</span>
+      </h1>
+      <p class="hero-sub">
+        Expert help for every crypto wallet and exchange.
+        From seed phrase recovery to transaction failures —
+        we've got you covered, 24/7.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact-support" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 5C2 4.45 2.45 4 3 4H15C15.55 4 16 4.45 16 5V13C16 13.55 15.55 14 15 14H3C2.45 14 2 13.55 2 13V5Z" stroke="currentColor" stroke-width="1.5"/><path d="M2 5L9 10L16 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Contact Support
+        </a>
+        <a href="#wallets" class="btn btn-ghost">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="2" y="4" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M12 9H14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="13" cy="9" r="1" fill="currentColor"/></svg>
+          View Wallets
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">8+</span>
+          <span class="stat-label">Platforms</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Support</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num">&lt; 2h</span>
+          <span class="stat-label">Response Time</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       WALLETS & EXCHANGES
+       ============================================================ -->
+  <section class="wallets-section" id="wallets">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Supported Platforms</p>
+        <h2 class="section-title">Wallets &amp; Exchanges</h2>
+        <p class="section-sub">
+          We provide dedicated support for the most widely used crypto platforms.
+          Whether you're locked out, need help with a transaction, or facing a technical issue —
+          we know these platforms inside and out.
+        </p>
+      </div>
+
+      <div class="wallets-grid">
+
+        <!-- MetaMask -->
+        <div class="wallet-card" data-platform="metamask">
+          <div class="wallet-logo-wrap">
+            <!--
+              PRIMARY: Wikimedia Commons (public domain, CDN-served)
+              High-res MetaMask Fox SVG — best quality, no CORS issues.
+            -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/3/36/MetaMask_Fox.svg"
+              alt="MetaMask logo"
+              class="wallet-logo"
+              width="56" height="56"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=metamask.io&sz=128';"
+            />
+          </div>
+          <div class="wallet-info">
+            <span class="wallet-name">MetaMask</span>
+            <span class="wallet-type">Ethereum Wallet</span>
+          </div>
+          <span class="wallet-badge">Popular</span>
+        </div>
+
+        <!-- Binance -->
+        <div class="wallet-card" data-platform="binance">
+          <div class="wallet-logo-wrap">
+            <!--
+              PRIMARY: Wikimedia Commons Binance SVG (official logo, public CDN).
+              FALLBACK: Google Favicon CDN.
+            -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/a/a2/Binance_Logo.svg"
+              alt="Binance logo"
+              class="wallet-logo"
+              width="56" height="56"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=binance.com&sz=128';"
+            />
+          </div>
+          <div class="wallet-info">
+            <span class="wallet-name">Binance</span>
+            <span class="wallet-type">Crypto Exchange</span>
+          </div>
+          <span class="wallet-badge">Popular</span>
+        </div>
+
+        <!-- Phantom -->
+        <div class="wallet-card" data-platform="phantom">
+          <div class="wallet-logo-wrap">
+            <!--
+              PRIMARY: Clearbit Logo API — fetches the official Phantom app icon.
+              FALLBACK: Google Favicon CDN (domain: phantom.app).
+            -->
+            <img
+              src="https://logo.clearbit.com/phantom.app?size=128"
+              alt="Phantom Wallet logo"
+              class="wallet-logo"
+              width="56" height="56"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=phantom.app&sz=128';"
+            />
+          </div>
+          <div class="wallet-info">
+            <span class="wallet-name">Phantom</span>
+            <span class="wallet-type">Solana Wallet</span>
+          </div>
+        </div>
+
+        <!-- Coinbase -->
+        <div class="wallet-card" data-platform="coinbase">
+          <div class="wallet-logo-wrap">
+            <!--
+              PRIMARY: Clearbit Logo API for Coinbase.
+              FALLBACK: Google Favicon CDN.
+            -->
+            <img
+              src="https://logo.clearbit.com/coinbase.com?size=128"
+              alt="Coinbase logo"
+              class="wallet-logo"
+              width="56" height="56"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=coinbase.com&sz=128';"
+            />
+          </div>
+          <div class="wallet-info">
+            <span class="wallet-name">Coinbase</span>
+            <span class="wallet-type">Crypto Exchange</span>
+          </div>
+        </div>
+
+        <!-- Trust Wallet -->
+        <div class="wallet-card" data-platform="trustwallet">
+          <div class="wallet-logo-wrap">
+            <!--
+              PRIMARY: Wikimedia Commons — Trust Wallet PNG (240px, official).
+              FALLBACK: Google Favicon CDN.
+            -->
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Trust_Wallet_Logo.png/240px-Trust_Wallet_Logo.png"
+              alt="Trust Wallet logo"
+              class="wallet-logo"
+              width="56" height="56"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=trustwallet.com&sz=128';"
+            />
+          </div>
+          <div class="wallet-info">
+            <span class="wallet-name">Trust Wallet</span>
+            <span class="wallet-type">Multi-Chain Wallet</span>
+          </div>
+        </div>
+
+        <!-- Bybit -->
+        <div class="wallet-card" data-platform="bybit">
+          <div class="wallet-logo-wrap">
+            <!--
+              PRIMARY: Clearbit Logo API for Bybit.
+              FALLBACK: Google Favicon CDN.
+            -->
+            <img
+              src="https://logo.clearbit.com/bybit.com?size=128"
+              alt="Bybit logo"
+              class="wallet-logo"
+              width="56" height="56"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=bybit.com&sz=128';"
+            />
+          </div>
+          <div class="wallet-info">
+            <span class="wallet-name">Bybit</span>
+            <span class="wallet-type">Derivatives Exchange</span>
+          </div>
+        </div>
+
+        <!-- WazirX -->
+        <div class="wallet-card" data-platform="wazirx">
+          <div class="wallet-logo-wrap">
+            <!--
+              PRIMARY: Clearbit Logo API for WazirX.
+              FALLBACK: Google Favicon CDN.
+            -->
+            <img
+              src="https://logo.clearbit.com/wazirx.com?size=128"
+              alt="WazirX logo"
+              class="wallet-logo"
+              width="56" height="56"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=wazirx.com&sz=128';"
+            />
+          </div>
+          <div class="wallet-info">
+            <span class="wallet-name">WazirX</span>
+            <span class="wallet-type">Indian Exchange</span>
+          </div>
+        </div>
+
+        <!-- Robinhood -->
+        <div class="wallet-card" data-platform="robinhood">
+          <div class="wallet-logo-wrap">
+            <!--
+              PRIMARY: Clearbit Logo API for Robinhood.
+              FALLBACK: Google Favicon CDN.
+            -->
+            <img
+              src="https://logo.clearbit.com/robinhood.com?size=128"
+              alt="Robinhood logo"
+              class="wallet-logo"
+              width="56" height="56"
+              loading="lazy"
+              onerror="this.onerror=null;this.src='https://www.google.com/s2/favicons?domain=robinhood.com&sz=128';"
+            />
+          </div>
+          <div class="wallet-info">
+            <span class="wallet-name">Robinhood</span>
+            <span class="wallet-type">Brokerage</span>
+          </div>
+        </div>
+
+      </div><!-- /wallets-grid -->
+
+      <p class="wallets-note">
+        Don't see your platform? We support many others.
+        <a href="#contact-support">Reach out</a> and we'll help.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURES / HOW WE HELP
+       ============================================================ -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Cover</p>
+        <h2 class="section-title">We handle the hard stuff</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22C17.52 22 22 17.52 22 12S17.52 2 12 2 2 6.48 2 12s4.48 10 10 10z" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="feature-title">Transaction Recovery</h3>
+          <p class="feature-desc">Stuck, pending, or failed transactions on any chain. We'll trace and resolve them.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="3" y="11" width="18" height="11" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M7 11V7a5 5 0 0 1 10 0v4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="12" cy="16" r="1.5" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feature-title">Wallet Access</h3>
+          <p class="feature-desc">Lost access to your wallet? We help with seed phrase guidance and account recovery paths.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M9 12l2 2 4-4M21 12c0 4.97-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3s9 4.03 9 9z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="feature-title">KYC & Verification</h3>
+          <p class="feature-desc">Account verification rejections, identity checks, and compliance issues resolved fast.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><polyline points="9,22 9,12 15,12 15,22" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="feature-title">Deposit & Withdrawal</h3>
+          <p class="feature-desc">Funds stuck or missing after a transfer? We'll investigate and guide you through resolution.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="feature-title">Security & Scams</h3>
+          <p class="feature-desc">Compromised wallet or suspected scam? We'll assess the situation and advise next steps.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 8v4M12 16h.01" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="feature-title">General Guidance</h3>
+          <p class="feature-desc">New to crypto? We answer questions on gas fees, networks, bridging, staking, and more.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+       ============================================================ -->
+  <section class="faq-section" id="faq">
+    <div class="container container-narrow">
+      <div class="section-header">
+        <p class="section-eyebrow">FAQ</p>
+        <h2 class="section-title">Common questions</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How do I recover access to my MetaMask wallet?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M5 7L9 11L13 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-a">
+            <p>MetaMask wallet access is tied entirely to your Secret Recovery Phrase (seed phrase). If you have your 12-word phrase, you can restore your wallet on any device using "Import wallet." If you've lost it, contact our support team — we'll walk you through every available recovery option and help you understand what data might still be accessible.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            My Binance withdrawal is stuck — what should I do?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M5 7L9 11L13 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-a">
+            <p>Stuck withdrawals on Binance are usually caused by network congestion, security holds, or pending KYC verification. First, check the withdrawal status in your Transaction History tab. If it shows "Processing" for more than 24 hours, or if it's marked "Failed" but funds haven't returned, reach out to us with your TXID and we'll investigate directly.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            I sent crypto to the wrong network — can it be recovered?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M5 7L9 11L13 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-a">
+            <p>In many cases, yes — especially if you sent between EVM-compatible networks (e.g., Ethereum to BNB Chain). Recovery depends on whether you control the receiving wallet's private keys. If you sent to an exchange address on the wrong network, contact both our support team and the exchange directly; many exchanges now have cross-chain recovery tools. We can help coordinate this process.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Why is my Coinbase account restricted or suspended?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M5 7L9 11L13 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-a">
+            <p>Coinbase may restrict accounts for incomplete identity verification, unusual login activity, compliance reviews, or suspected policy violations. Check your registered email for any notices from Coinbase. Our team can help you understand the reason, prepare appeal documentation, and communicate effectively with Coinbase's support team on your behalf.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            How long does it take to get a response?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M5 7L9 11L13 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-a">
+            <p>Our typical first-response time is under 2 hours during business hours, and under 6 hours at any other time. For critical issues like suspected account compromise or large missing funds, we prioritize immediately. Fill out the contact form below and include as much detail as possible — this significantly speeds up resolution.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            Is my data and seed phrase safe if I share it for recovery?
+            <svg class="faq-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path d="M5 7L9 11L13 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+          <div class="faq-a">
+            <p><strong>Never share your seed phrase with anyone, including us.</strong> Legitimate support teams will never ask for your secret recovery phrase or private keys. Our support process involves guiding you through steps you perform yourself, on your own devices. If anyone claiming to be support is requesting your seed phrase, that is a scam — report it immediately.</p>
+          </div>
+        </div>
+
+      </div><!-- /faq-list -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SUPPORT
+       id="contact-support" is used by:
+       - The floating button's scroll target
+       - The IntersectionObserver that hides the floating button
+       ============================================================ -->
+  <section class="contact-section" id="contact-support">
+    <div class="container container-narrow">
+      <div class="contact-card">
+        <div class="contact-header">
+          <div class="contact-icon-ring">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+              <path d="M4 8C4 6.9 4.9 6 6 6H22C23.1 6 24 6.9 24 8V18C24 19.1 23.1 20 22 20H6C4.9 20 4 19.1 4 18V8Z" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M4 8L14 14.5L24 8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div>
+            <p class="section-eyebrow" style="text-align:left;margin-bottom:6px;">Support</p>
+            <h2 class="contact-title">Need help? We're here.</h2>
+            <p class="contact-subtitle">
+              Fill out the form below and our team will get back to you within 2 hours.
+              The more detail you provide, the faster we can resolve your issue.
+            </p>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="cf-name">Full Name</label>
+              <input
+                type="text"
+                id="cf-name"
+                name="name"
+                class="form-input"
+                placeholder="Your name"
+                autocomplete="name"
+                required
+              />
+              <span class="form-error" id="err-name"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="cf-email">Email Address</label>
+              <input
+                type="email"
+                id="cf-email"
+                name="email"
+                class="form-input"
+                placeholder="you@example.com"
+                autocomplete="email"
+                required
+              />
+              <span class="form-error" id="err-email"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cf-platform">Platform / Wallet</label>
+            <div class="form-select-wrap">
+              <select id="cf-platform" name="platform" class="form-select">
+                <option value="">— Select a platform —</option>
+                <option value="metamask">MetaMask</option>
+                <option value="binance">Binance</option>
+                <option value="phantom">Phantom</option>
+                <option value="coinbase">Coinbase</option>
+                <option value="trustwallet">Trust Wallet</option>
+                <option value="bybit">Bybit</option>
+                <option value="wazirx">WazirX</option>
+                <option value="robinhood">Robinhood</option>
+                <option value="other">Other</option>
+              </select>
+              <svg class="select-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cf-issue">Issue Type</label>
+            <div class="form-select-wrap">
+              <select id="cf-issue" name="issue" class="form-select">
+                <option value="">— What kind of help do you need? —</option>
+                <option value="access">Can't access my wallet / account</option>
+                <option value="transaction">Stuck / failed transaction</option>
+                <option value="withdrawal">Withdrawal or deposit issue</option>
+                <option value="kyc">KYC / verification problem</option>
+                <option value="security">Security concern / possible scam</option>
+                <option value="recovery">Seed phrase / key recovery</option>
+                <option value="other">Other</option>
+              </select>
+              <svg class="select-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="cf-message">
+              Describe your issue
+              <span class="form-label-hint">Be as specific as possible</span>
+            </label>
+            <textarea
+              id="cf-message"
+              name="message"
+              class="form-textarea"
+              rows="5"
+              placeholder="Describe what happened, include transaction IDs, wallet addresses (public only), or any error messages you received…"
+              required
+            ></textarea>
+            <span class="form-error" id="err-message"></span>
+          </div>
+
+          <div class="form-disclaimer">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12zM8 5.5v3M8 10.5h.01" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <span>Never include your seed phrase or private keys. We will never ask for them.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M15.5 3L1.5 8.5L6.5 10.5M15.5 3L10.5 16.5L6.5 10.5M15.5 3L6.5 10.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Send Message
+          </button>
+
+          <div class="form-success" id="form-success" style="display:none;">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M17 5L8 14L4 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Message sent! We'll be in touch within 2 hours.
+          </div>
+        </form>
+
+      </div><!-- /contact-card -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo footer-logo">
+            <span class="nav-logo-icon">
+              <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+                <path d="M11 2L3 7V15L11 20L19 15V7L11 2Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+                <path d="M11 2V20M3 7L19 15M19 7L3 15" stroke="currentColor" stroke-width="1.2" stroke-opacity="0.5"/>
+              </svg>
+            </span>
+            CryptoDesk
+          </a>
+          <p class="footer-tagline">Professional Web3 support — 24/7.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#wallets" class="footer-link">Wallets</a>
+          <a href="#features" class="footer-link">Services</a>
+          <a href="#faq" class="footer-link">FAQ</a>
+          <a href="#contact-support" class="footer-link">Contact</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2025 CryptoDesk. This is a demo support site generated for informational purposes.</p>
+        <p class="footer-legal">Not affiliated with MetaMask, Binance, Coinbase, or any listed platform.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       FLOATING CONTACT SUPPORT BUTTON
+       Controlled by IntersectionObserver in script.js.
+       Hides when #contact-support section is in view.
+       ============================================================ -->
+  <button
+    class="floating-support-button"
+    id="floating-support-btn"
+    aria-label="Contact Support"
+    title="Contact Support"
+  >
+    <span class="fsb-icon">
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path d="M10 1.5C5.36 1.5 1.5 5.36 1.5 10c0 1.52.41 2.95 1.13 4.17L1.5 18.5l4.44-1.11A8.43 8.43 0 0 0 10 18.5c4.64 0 8.5-3.86 8.5-8.5S14.64 1.5 10 1.5z" stroke="white" stroke-width="1.5"/>
+        <path d="M7 8.5h6M7 11.5h4" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </span>
+    <span class="fsb-label">Contact Support</span>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+          </html>
